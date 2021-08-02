@@ -77,3 +77,19 @@ body{
 .mode:hover{
     cursor: pointer;
 }
+
+/* CUSTOM CSS, NOT PROVIDED BY ASSIGNMENT */
+
+.carousel-img{
+    width: 400px;
+    height: auto;
+    background-size: cover;
+}
+
+.carousel-img img{
+    display: none;
+}
+
+.show-carousel-img img{
+    display: block;
+}
