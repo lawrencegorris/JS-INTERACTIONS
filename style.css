@@ -16,16 +16,16 @@ body{
 }
 
 .chaser{
-    width: 50px;
-    height: 50px;
-    background: red;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
 .runner{
     width: 50px;
     height: 50px;
-    background: green;
     border-radius: 50%;
 }
 
@@ -92,4 +92,19 @@ body{
 
 .show-carousel-img img{
     display: block;
+}
+
+/* RUNNER */
+
+.chaser {
+    background-image: url('./assets/small-img/pikachu-chaser.png');
+    background-size: cover;
+    position: static;
+    display: block;
+}
+
+#chaserBox{
+    overflow: hidden;
+    cursor: url('./assets/small-img/trainer-cursor.png') -10 -5, auto;
+    padding: 1px;
 }

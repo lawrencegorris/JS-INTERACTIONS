@@ -35,7 +35,6 @@ function showPrevious(){
         currentImage --
     }
     calculateSlide();
-
 }
 
 function showNext(){
@@ -45,5 +44,27 @@ function showNext(){
         currentImage ++
     }
     calculateSlide();
+}
 
+// CHASER
+
+const chaserBox = document.querySelector('#chaserBox')
+const chaser =  document.querySelector('.chaser');
+
+chaserBox.addEventListener('mouseover', startChase)
+chaserBox.addEventListener('mousemove', chase);
+chaserBox.addEventListener('mouseout', stopChase);
+
+function startChase(){
+    chaser.style.display = 'block';
+}
+
+function chase(e){
+    chaser.style.position = 'fixed';
+    chaser.style.left = e.clientX + 'px';
+    chaser.style.top = e.clientY + 'px';
+}
+
+function stopChase(){
+    chaser.style.display = 'none'
 }
