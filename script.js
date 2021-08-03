@@ -9,6 +9,22 @@ function randomLetter(){
 
 /* CUSTOM JS, NOT PROVIDED NY ASSIGNMENT */
 
+// Color mode switch
+
+const body = document.querySelector('body')
+const switchMode = document.querySelector('.mode');
+
+switchMode.addEventListener('click', toggleMode);
+function toggleMode(){
+    if(body.className === 'lightMode'){
+        body.classList.remove('lightMode');
+        body.classList.add('darkMode');
+    }else {
+        body.classList.remove('darkMode');
+        body.classList.add('lightMode')
+    }
+}
+
 // CAROUSEL
 
 const carouselPrev = document.querySelector('#carousel-prev');
@@ -48,8 +64,8 @@ function showNext(){
 
 // CHASER
 
-const chaserBox = document.querySelector('#chaserBox')
 const chaser =  document.querySelector('.chaser');
+const chaserBox = document.querySelector('#chaserBox')
 
 chaserBox.addEventListener('mouseover', startChase)
 chaserBox.addEventListener('mousemove', chase);
@@ -68,3 +84,47 @@ function chase(e){
 function stopChase(){
     chaser.style.display = 'none'
 }
+
+// RUNNER
+
+/*const runner = document.querySelector('.runner')
+const runnerBox = document.querySelector('#runnerBox')
+
+runner.addEventListener('mouseenter', runPokemon)
+
+// Client mouse position
+
+runnerBox.addEventListener('mousemove', userPosition)
+
+let userX = '';
+let userY = '';
+let runnerPositionTop = '';
+let runnerPositionLeft = '';
+
+function userPosition(e){
+    userX  = e.clientX;
+    userY = e.clientY;
+    runnerPosition = runner.getBoundingClientRect();
+    runnerPositionTop = Math.round(runnerPosition.top);
+    runnerPositionLeft = Math.round(runnerPosition.left);
+    //console.log(userX + ',' + userY)
+    //console.log(runnerPosition.top + 'px')
+    return;
+}
+
+//const xPos = Math.floor(Math.random() * runnerBox.clientWidth - 100);
+//const yPos = Math.floor(Math.random() * runnerBox.clientHeight - 100);
+
+function runPokemon(){
+    if(userY - 100 == runnerPositionLeft){
+        console.log('same')
+    }
+    console.log(userX + '')
+    //runner.style.left = xPos + 'px';
+    //runner.style.top = yPos + 'px';
+    //console.log(xPos + ',' + yPos);
+    console.log(runnerPositionTop + ',' +runnerPositionLeft)
+
+}*/
+
+// Dark mode switch
