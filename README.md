@@ -7,14 +7,15 @@ Feedback will be provided in this README (if any)
 No special install needed (no use of Node), just run HTML file in browser or live server.
 
 ### Must have features:
-- [ ] Parallax carousel
-- [ ] Collage with popup for more details
+- [x] Parallax carousel (partially)
+- [x] Collage with popup for more details
 - [ ] Hover image above every Pokemon in the text
-- [ ] Functional chaser or runner circle
+- [x] Functional chaser or runner circle
 
 ### Nice to have features:
 - [ ] Chaser AND runner circle are functional
-- [ ] Light/Dark mode toggles
+- [x] Light/Dark mode toggles
 - [ ] Final letter challenge completed!
 
 ### Place for potential feedback:
+- Nice choice of different exercises, so far very fun to solve :)
