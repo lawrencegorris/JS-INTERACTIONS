@@ -62,6 +62,22 @@ function showNext(){
     calculateSlide();
 }
 
+// Collage
+
+const collageImages = document.getElementsByClassName('image');
+for(let i = 0; i < collageImages.length; i++){
+    collageImages[i].addEventListener('click', imageClicked);
+    collageImages[i].addEventListener('mouseout', imageLeave)
+    function imageClicked(){
+        collageImages[i].innerHTML = 'Lorem Ipsum something something Latin, stab Caesar many times'
+        collageImages[i].style.transform = 'scale(1.1)'
+    }
+    function imageLeave(){
+        collageImages[i].innerHTML = '';
+        collageImages[i].style.transform = 'scale(1)'
+    }
+}
+
 // CHASER
 
 const chaser =  document.querySelector('.chaser');
