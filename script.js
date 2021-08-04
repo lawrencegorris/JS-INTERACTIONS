@@ -143,4 +143,30 @@ function runPokemon(){
 
 }*/
 
-// Dark mode switch
+// Letter Challenge
+
+const letters = document.querySelectorAll('.letter');
+
+window.addEventListener('keydown', letterFunction);
+
+function letterFunction(input){
+    letters.forEach((letter) => {
+        if(input.key == letter.innerHTML){
+            letter.style.fontSize = 50 + 'px'
+            letter.style.color = '#fefefe'
+            letter.style.backgroundColor = '#0a0a0a'
+        }
+    })
+}
+
+window.addEventListener('keyup', resetLetters)
+
+function resetLetters(input){
+    letters.forEach((letter) => {
+        if(input.key == letter.innerHTML){
+            letter.style.fontSize = 'initial'
+            letter.style.color = 'initial'
+            letter.style.backgroundColor = 'initial'
+        }
+    })
+}
