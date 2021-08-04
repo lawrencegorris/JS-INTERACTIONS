@@ -15,7 +15,7 @@ No special install needed (no use of Node), just run HTML file in browser or liv
 ### Nice to have features:
 - [ ] Chaser AND runner circle are functional
 - [x] Light/Dark mode toggles
-- [ ] Final letter challenge completed!
+- [x] Final letter challenge completed!
 
 ### Place for potential feedback:
 - Nice choice of different exercises, so far very fun to solve :)
