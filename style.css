@@ -81,6 +81,10 @@ body{
 
 /* Carousel */
 
+.carouselContainer{
+    background-attachment: fixed;
+}
+
 .carousel-img{
     width: 400px;
     height: auto;
@@ -100,6 +104,61 @@ body{
     color: #fefefe;
     text-align: center;
     font-size: 25px;
+}
+
+/* Poke hover */
+
+.poke{
+    display: inline-block;
+    position: relative;
+}
+
+.poke#pidgeot::after{
+    position: absolute;
+    content: url(./assets/small-img/pidgeot.png);
+    transform: scale(0);
+    top: 0;
+    left: 0;
+}
+
+.poke#pidgeot:hover::after{
+    transform: scale(1);
+}
+
+.poke#magikarp::after{
+    position: absolute;
+    content: url(./assets/small-img/magikarp.png);
+    transform: scale(0);
+    top: 0;
+    left: 0;
+}
+
+.poke#magikarp:hover::after{
+    transform: scale(1);
+}
+
+.poke#slowpoke::after{
+    position: absolute;
+    content: url(./assets/small-img/slowpoke.png);
+    transform: scale(0);
+    top: 0;
+    left: 0;
+}
+
+.poke#slowpoke:hover::after{
+    transform: scale(1);
+}
+
+.poke#farfetchd::after{
+    position: absolute;
+    content: url(./assets/small-img/farfetchd.png);
+    transform: scale(0);
+    top: 0;
+    left: 0;
+}
+
+.poke#farfetchd:hover::after{
+    transform: scale(1);
 }
 
 /* CHASER */
