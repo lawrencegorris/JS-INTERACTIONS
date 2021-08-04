@@ -9,7 +9,7 @@ No special install needed (no use of Node), just run HTML file in browser or liv
 ### Must have features:
 - [x] Parallax carousel (partially)
 - [x] Collage with popup for more details
-- [ ] Hover image above every Pokemon in the text
+- [x] Hover image above every Pokemon in the text
 - [x] Functional chaser or runner circle
 
 ### Nice to have features:
@@ -19,3 +19,4 @@ No special install needed (no use of Node), just run HTML file in browser or liv
 
 ### Place for potential feedback:
 - Nice choice of different exercises, so far very fun to solve :)
+- Note: on mobile most functions won't work, like the hover, chaser...
